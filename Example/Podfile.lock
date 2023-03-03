@@ -1,0 +1,16 @@
+PODS:
+  - GJControlStyle (0.1.0)
+
+DEPENDENCIES:
+  - GJControlStyle (from `../`)
+
+EXTERNAL SOURCES:
+  GJControlStyle:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GJControlStyle: 51e9a4efdd3bd92a8c2440d384b1c8d87d21d662
+
+PODFILE CHECKSUM: 2c4e3ffbb63dc9c4aba33c6cc67cd7a7c38c45a1
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,6 @@
+framework module Pods_GJControlStyle_Example {
+  umbrella header "Pods-GJControlStyle_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

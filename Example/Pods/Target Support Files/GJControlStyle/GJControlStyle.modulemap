@@ -1,0 +1,6 @@
+framework module GJControlStyle {
+  umbrella header "GJControlStyle-umbrella.h"
+
+  export *
+  module * { export * }
+}
