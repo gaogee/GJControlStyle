@@ -7,7 +7,7 @@
 //
 
 #import "GJViewStyle.h"
-#import "GJControlStyle.h"
+#import "GJViewStyleCategory.h"
 @implementation GJViewStyle
 
 -(id)gj_style:(void (^)(GJViewStyle * _Nonnull))style{

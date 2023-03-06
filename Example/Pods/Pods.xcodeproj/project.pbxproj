@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		121FBCDE082BFEA89F440916FCF80B18 /* Pods-GJControlStyle_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30751F1B42F64425EF6EF0DEC3F9DDD0 /* Pods-GJControlStyle_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F4A197842AE1174B8CA9F297F75F7AE /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF8B1B9E392742162A16CB44FB85BB7 /* ReplaceMe.m */; };
 		3DCBA8B9B4FCDEC44643D232929034F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		4505AF30056254F5CD6DD69578675730 /* GJControlStyle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE2B9DAB171E296331C863D242D1991 /* GJControlStyle-dummy.m */; };
 		5002716EAC5182711AA710388C6EFD25 /* GJControlStyle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E63A6A8511DE413AB21938CF10DBB9C8 /* GJControlStyle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -69,7 +68,6 @@
 		E434F28C421CD6206F49FB6EB9643D23 /* GJControlStyle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GJControlStyle.modulemap; sourceTree = "<group>"; };
 		E63A6A8511DE413AB21938CF10DBB9C8 /* GJControlStyle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GJControlStyle-umbrella.h"; sourceTree = "<group>"; };
 		F6908D53F711160B5DF9EF3F3225F4FE /* Pods-GJControlStyle_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GJControlStyle_Example-Info.plist"; sourceTree = "<group>"; };
-		FEF8B1B9E392742162A16CB44FB85BB7 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = GJControlStyle/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +127,6 @@
 		20EA59C2EB26C182135F8CDEC19AF345 /* GJControlStyle */ = {
 			isa = PBXGroup;
 			children = (
-				FEF8B1B9E392742162A16CB44FB85BB7 /* ReplaceMe.m */,
 				0EAAC26AEF89648DE7713B2D5EFB245A /* Pod */,
 				A9AA4D59D828EDE4458A50D32C7DDA25 /* Support Files */,
 			);
@@ -384,7 +381,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4505AF30056254F5CD6DD69578675730 /* GJControlStyle-dummy.m in Sources */,
-				2F4A197842AE1174B8CA9F297F75F7AE /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

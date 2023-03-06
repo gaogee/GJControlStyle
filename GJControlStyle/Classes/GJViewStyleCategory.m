@@ -1,12 +1,12 @@
 //
-//  UIView+GJControlStyle.m
+//  GJViewStyleCategory.m
 //  GJControlStyle_Example
 //
 //  Created by gaogee on 2023/3/6.
 //  Copyright © 2023 gaogee. All rights reserved.
 //
 
-#import "GJControlStyle.h"
+#import "GJViewStyleCategory.h"
 #import <objc/runtime.h>
 @implementation UIView (GJControlStyle)
 
