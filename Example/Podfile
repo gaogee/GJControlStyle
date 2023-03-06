@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '11.0'
 
 target 'GJControlStyle_Example' do
   pod 'GJControlStyle', :path => '../'
@@ -11,3 +11,4 @@ target 'GJControlStyle_Example' do
     
   end
 end
+

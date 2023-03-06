@@ -23,11 +23,12 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B3AD0E25666E9A1A13C4191C /* Pods_GJControlStyle_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93A611477948E6230008A7F /* Pods_GJControlStyle_Tests.framework */; };
-		E8EF721029B58C6A0023CD35 /* GJViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF720F29B58C6A0023CD35 /* GJViewStyle.m */; };
-		E8EF721629B59F790023CD35 /* GJLabelStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF721529B59F790023CD35 /* GJLabelStyle.m */; };
-		E8EF721C29B5A2B80023CD35 /* GJControlStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF721B29B5A2B80023CD35 /* GJControlStyle.m */; };
-		E8EF721F29B5B1250023CD35 /* GJButtonStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF721E29B5B1250023CD35 /* GJButtonStyle.m */; };
-		E8EF722229B5C5DE0023CD35 /* GJImageViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF722129B5C5DE0023CD35 /* GJImageViewStyle.m */; };
+		E8EF723A29B5E7C50023CD35 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF723929B5E7C50023CD35 /* ReplaceMe.m */; };
+		E8EF724529B5E7F50023CD35 /* GJViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF723B29B5E7F30023CD35 /* GJViewStyle.m */; };
+		E8EF724629B5E7F50023CD35 /* GJLabelStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF723C29B5E7F30023CD35 /* GJLabelStyle.m */; };
+		E8EF724729B5E7F50023CD35 /* GJImageViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF723D29B5E7F30023CD35 /* GJImageViewStyle.m */; };
+		E8EF724829B5E7F50023CD35 /* GJControlStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF724229B5E7F40023CD35 /* GJControlStyle.m */; };
+		E8EF724929B5E7F50023CD35 /* GJButtonStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF724429B5E7F40023CD35 /* GJButtonStyle.m */; };
 		E9BED2FE1D5A489EF640BADD /* Pods_GJControlStyle_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3F59EA5D759E6C915EDEFC /* Pods_GJControlStyle_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,16 +72,17 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88545A270321D2FA103718AA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E4E08B463B643248B48C6289 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		E8EF720E29B58C6A0023CD35 /* GJViewStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJViewStyle.h; sourceTree = "<group>"; };
-		E8EF720F29B58C6A0023CD35 /* GJViewStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJViewStyle.m; sourceTree = "<group>"; };
-		E8EF721429B59F790023CD35 /* GJLabelStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJLabelStyle.h; sourceTree = "<group>"; };
-		E8EF721529B59F790023CD35 /* GJLabelStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJLabelStyle.m; sourceTree = "<group>"; };
-		E8EF721A29B5A2B80023CD35 /* GJControlStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJControlStyle.h; sourceTree = "<group>"; };
-		E8EF721B29B5A2B80023CD35 /* GJControlStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJControlStyle.m; sourceTree = "<group>"; };
-		E8EF721D29B5B1250023CD35 /* GJButtonStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJButtonStyle.h; sourceTree = "<group>"; };
-		E8EF721E29B5B1250023CD35 /* GJButtonStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJButtonStyle.m; sourceTree = "<group>"; };
-		E8EF722029B5C5DE0023CD35 /* GJImageViewStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJImageViewStyle.h; sourceTree = "<group>"; };
-		E8EF722129B5C5DE0023CD35 /* GJImageViewStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJImageViewStyle.m; sourceTree = "<group>"; };
+		E8EF723929B5E7C50023CD35 /* ReplaceMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = ../GJControlStyle/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		E8EF723B29B5E7F30023CD35 /* GJViewStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GJViewStyle.m; path = ../GJControlStyle/Classes/GJViewStyle.m; sourceTree = "<group>"; };
+		E8EF723C29B5E7F30023CD35 /* GJLabelStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GJLabelStyle.m; path = ../GJControlStyle/Classes/GJLabelStyle.m; sourceTree = "<group>"; };
+		E8EF723D29B5E7F30023CD35 /* GJImageViewStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GJImageViewStyle.m; path = ../GJControlStyle/Classes/GJImageViewStyle.m; sourceTree = "<group>"; };
+		E8EF723E29B5E7F30023CD35 /* GJLabelStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GJLabelStyle.h; path = ../GJControlStyle/Classes/GJLabelStyle.h; sourceTree = "<group>"; };
+		E8EF723F29B5E7F30023CD35 /* GJControlStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GJControlStyle.h; path = ../GJControlStyle/Classes/GJControlStyle.h; sourceTree = "<group>"; };
+		E8EF724029B5E7F40023CD35 /* GJViewStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GJViewStyle.h; path = ../GJControlStyle/Classes/GJViewStyle.h; sourceTree = "<group>"; };
+		E8EF724129B5E7F40023CD35 /* GJImageViewStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GJImageViewStyle.h; path = ../GJControlStyle/Classes/GJImageViewStyle.h; sourceTree = "<group>"; };
+		E8EF724229B5E7F40023CD35 /* GJControlStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GJControlStyle.m; path = ../GJControlStyle/Classes/GJControlStyle.m; sourceTree = "<group>"; };
+		E8EF724329B5E7F40023CD35 /* GJButtonStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GJButtonStyle.h; path = ../GJControlStyle/Classes/GJButtonStyle.h; sourceTree = "<group>"; };
+		E8EF724429B5E7F40023CD35 /* GJButtonStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GJButtonStyle.m; path = ../GJControlStyle/Classes/GJButtonStyle.m; sourceTree = "<group>"; };
 		E93A611477948E6230008A7F /* Pods_GJControlStyle_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GJControlStyle_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,8 +195,18 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				E8EF720D29B58C5A0023CD35 /* GJControlStyle */,
 				7B1B815842D18D32497F7605 /* GJControlStyle.podspec */,
+				E8EF723929B5E7C50023CD35 /* ReplaceMe.m */,
+				E8EF724329B5E7F40023CD35 /* GJButtonStyle.h */,
+				E8EF724429B5E7F40023CD35 /* GJButtonStyle.m */,
+				E8EF723F29B5E7F30023CD35 /* GJControlStyle.h */,
+				E8EF724229B5E7F40023CD35 /* GJControlStyle.m */,
+				E8EF724129B5E7F40023CD35 /* GJImageViewStyle.h */,
+				E8EF723D29B5E7F30023CD35 /* GJImageViewStyle.m */,
+				E8EF723E29B5E7F30023CD35 /* GJLabelStyle.h */,
+				E8EF723C29B5E7F30023CD35 /* GJLabelStyle.m */,
+				E8EF724029B5E7F40023CD35 /* GJViewStyle.h */,
+				E8EF723B29B5E7F30023CD35 /* GJViewStyle.m */,
 				E4E08B463B643248B48C6289 /* README.md */,
 				88545A270321D2FA103718AA /* LICENSE */,
 			);
@@ -210,23 +222,6 @@
 				0D5BB00EEBEA66387F1857C7 /* Pods-GJControlStyle_Tests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		E8EF720D29B58C5A0023CD35 /* GJControlStyle */ = {
-			isa = PBXGroup;
-			children = (
-				E8EF721A29B5A2B80023CD35 /* GJControlStyle.h */,
-				E8EF721B29B5A2B80023CD35 /* GJControlStyle.m */,
-				E8EF720E29B58C6A0023CD35 /* GJViewStyle.h */,
-				E8EF720F29B58C6A0023CD35 /* GJViewStyle.m */,
-				E8EF721429B59F790023CD35 /* GJLabelStyle.h */,
-				E8EF721529B59F790023CD35 /* GJLabelStyle.m */,
-				E8EF721D29B5B1250023CD35 /* GJButtonStyle.h */,
-				E8EF721E29B5B1250023CD35 /* GJButtonStyle.m */,
-				E8EF722029B5C5DE0023CD35 /* GJImageViewStyle.h */,
-				E8EF722129B5C5DE0023CD35 /* GJImageViewStyle.m */,
-			);
-			name = GJControlStyle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,13 +392,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8EF724929B5E7F50023CD35 /* GJButtonStyle.m in Sources */,
+				E8EF723A29B5E7C50023CD35 /* ReplaceMe.m in Sources */,
+				E8EF724629B5E7F50023CD35 /* GJLabelStyle.m in Sources */,
 				6003F59E195388D20070C39A /* GJAppDelegate.m in Sources */,
-				E8EF721629B59F790023CD35 /* GJLabelStyle.m in Sources */,
+				E8EF724729B5E7F50023CD35 /* GJImageViewStyle.m in Sources */,
+				E8EF724529B5E7F50023CD35 /* GJViewStyle.m in Sources */,
 				6003F5A7195388D20070C39A /* GJViewController.m in Sources */,
-				E8EF721C29B5A2B80023CD35 /* GJControlStyle.m in Sources */,
-				E8EF721F29B5B1250023CD35 /* GJButtonStyle.m in Sources */,
-				E8EF722229B5C5DE0023CD35 /* GJImageViewStyle.m in Sources */,
-				E8EF721029B58C6A0023CD35 /* GJViewStyle.m in Sources */,
+				E8EF724829B5E7F50023CD35 /* GJControlStyle.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +531,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GJControlStyle/GJControlStyle-Prefix.pch";
 				INFOPLIST_FILE = "GJControlStyle/GJControlStyle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -551,6 +548,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GJControlStyle/GJControlStyle-Prefix.pch";
 				INFOPLIST_FILE = "GJControlStyle/GJControlStyle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
