@@ -7,7 +7,7 @@
 //
 
 #import "GJViewController.h"
-
+#import "GJControlStyle.h"
 @interface GJViewController ()
 
 @end
@@ -17,6 +17,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UILabel *lab = [[UILabel alloc]init];
+    [self.view addSubview:lab];
+    [lab gj_labelStyle:^(GJLabelStyle * _Nonnull style) {
+        style.frame(CGRectMake(0, 0, 100, 100));
+        style.backgroundColor([UIColor redColor]);
+        style.text(@"sdjasjdk");
+    }];
+    UIButton *btn = [[UIButton alloc]init];
+    [btn gj_buttonStyle:^(GJButtonStyle * _Nonnull style) {
+        style.frame(CGRectMake(100, 100, 100, 100));
+        style.title(@"333", UIControlStateNormal);
+        style.backgroundColor([UIColor blueColor]);
+    }];
+    [self.view addSubview:btn];
+    
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

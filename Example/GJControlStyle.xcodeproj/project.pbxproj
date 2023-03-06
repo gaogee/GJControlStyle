@@ -23,6 +23,11 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B3AD0E25666E9A1A13C4191C /* Pods_GJControlStyle_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93A611477948E6230008A7F /* Pods_GJControlStyle_Tests.framework */; };
+		E8EF721029B58C6A0023CD35 /* GJViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF720F29B58C6A0023CD35 /* GJViewStyle.m */; };
+		E8EF721629B59F790023CD35 /* GJLabelStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF721529B59F790023CD35 /* GJLabelStyle.m */; };
+		E8EF721C29B5A2B80023CD35 /* GJControlStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF721B29B5A2B80023CD35 /* GJControlStyle.m */; };
+		E8EF721F29B5B1250023CD35 /* GJButtonStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF721E29B5B1250023CD35 /* GJButtonStyle.m */; };
+		E8EF722229B5C5DE0023CD35 /* GJImageViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF722129B5C5DE0023CD35 /* GJImageViewStyle.m */; };
 		E9BED2FE1D5A489EF640BADD /* Pods_GJControlStyle_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3F59EA5D759E6C915EDEFC /* Pods_GJControlStyle_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,11 +66,21 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7B1B815842D18D32497F7605 /* GJControlStyle.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GJControlStyle.podspec; path = ../GJControlStyle.podspec; sourceTree = "<group>"; };
+		7B1B815842D18D32497F7605 /* GJControlStyle.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GJControlStyle.podspec; path = ../GJControlStyle.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8664C1D368F4F3FD3F8AFF8A /* Pods-GJControlStyle_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJControlStyle_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GJControlStyle_Tests/Pods-GJControlStyle_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		88545A270321D2FA103718AA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		E4E08B463B643248B48C6289 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		88545A270321D2FA103718AA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E4E08B463B643248B48C6289 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E8EF720E29B58C6A0023CD35 /* GJViewStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJViewStyle.h; sourceTree = "<group>"; };
+		E8EF720F29B58C6A0023CD35 /* GJViewStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJViewStyle.m; sourceTree = "<group>"; };
+		E8EF721429B59F790023CD35 /* GJLabelStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJLabelStyle.h; sourceTree = "<group>"; };
+		E8EF721529B59F790023CD35 /* GJLabelStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJLabelStyle.m; sourceTree = "<group>"; };
+		E8EF721A29B5A2B80023CD35 /* GJControlStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJControlStyle.h; sourceTree = "<group>"; };
+		E8EF721B29B5A2B80023CD35 /* GJControlStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJControlStyle.m; sourceTree = "<group>"; };
+		E8EF721D29B5B1250023CD35 /* GJButtonStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJButtonStyle.h; sourceTree = "<group>"; };
+		E8EF721E29B5B1250023CD35 /* GJButtonStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJButtonStyle.m; sourceTree = "<group>"; };
+		E8EF722029B5C5DE0023CD35 /* GJImageViewStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJImageViewStyle.h; sourceTree = "<group>"; };
+		E8EF722129B5C5DE0023CD35 /* GJImageViewStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJImageViewStyle.m; sourceTree = "<group>"; };
 		E93A611477948E6230008A7F /* Pods_GJControlStyle_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GJControlStyle_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -178,6 +193,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				E8EF720D29B58C5A0023CD35 /* GJControlStyle */,
 				7B1B815842D18D32497F7605 /* GJControlStyle.podspec */,
 				E4E08B463B643248B48C6289 /* README.md */,
 				88545A270321D2FA103718AA /* LICENSE */,
@@ -193,8 +209,24 @@
 				8664C1D368F4F3FD3F8AFF8A /* Pods-GJControlStyle_Tests.debug.xcconfig */,
 				0D5BB00EEBEA66387F1857C7 /* Pods-GJControlStyle_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E8EF720D29B58C5A0023CD35 /* GJControlStyle */ = {
+			isa = PBXGroup;
+			children = (
+				E8EF721A29B5A2B80023CD35 /* GJControlStyle.h */,
+				E8EF721B29B5A2B80023CD35 /* GJControlStyle.m */,
+				E8EF720E29B58C6A0023CD35 /* GJViewStyle.h */,
+				E8EF720F29B58C6A0023CD35 /* GJViewStyle.m */,
+				E8EF721429B59F790023CD35 /* GJLabelStyle.h */,
+				E8EF721529B59F790023CD35 /* GJLabelStyle.m */,
+				E8EF721D29B5B1250023CD35 /* GJButtonStyle.h */,
+				E8EF721E29B5B1250023CD35 /* GJButtonStyle.m */,
+				E8EF722029B5C5DE0023CD35 /* GJImageViewStyle.h */,
+				E8EF722129B5C5DE0023CD35 /* GJImageViewStyle.m */,
+			);
+			name = GJControlStyle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +290,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -365,7 +398,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* GJAppDelegate.m in Sources */,
+				E8EF721629B59F790023CD35 /* GJLabelStyle.m in Sources */,
 				6003F5A7195388D20070C39A /* GJViewController.m in Sources */,
+				E8EF721C29B5A2B80023CD35 /* GJControlStyle.m in Sources */,
+				E8EF721F29B5B1250023CD35 /* GJButtonStyle.m in Sources */,
+				E8EF722229B5C5DE0023CD35 /* GJImageViewStyle.m in Sources */,
+				E8EF721029B58C6A0023CD35 /* GJViewStyle.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
