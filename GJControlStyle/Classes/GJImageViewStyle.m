@@ -25,4 +25,13 @@
         return self;
     };
 }
+
+-(GJViewStyle * _Nonnull (^)(UIColor * _Nonnull))tintColor{
+    return ^GJImageViewStyle *(UIColor *c){
+        UIImageView *iv = (UIImageView *)self.view;
+        iv.tintColor = c;
+        return self;
+    };
+}
+
 @end

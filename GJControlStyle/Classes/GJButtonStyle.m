@@ -103,6 +103,37 @@
     };
 }
 
+-(GJViewStyle * _Nonnull (^)(BOOL * _Nonnull))selected{
+    return ^GJViewStyle  *(BOOL *sel){
+        UIButton *bt = (UIButton *)self.view;
+        bt.selected = sel;
+        return self;
+    };
+}
+
+-(GJViewStyle * _Nonnull (^)(UIViewContentMode))imageViewContentMode{
+    return ^GJViewStyle  *(UIViewContentMode cm){
+        UIButton *bt = (UIButton *)self.view;
+        [bt.imageView setContentMode:cm];
+        return self;
+    };
+}
+
+-(GJViewStyle * _Nonnull (^)(UIViewContentMode))titleLabelContentMode{
+    return ^GJViewStyle  *(UIViewContentMode cm){
+        UIButton *bt = (UIButton *)self.view;
+        [bt.titleLabel setContentMode:cm];
+        return self;
+    };
+}
+
+-(GJViewStyle * _Nonnull (^)(UIFont * _Nonnull))font{
+    return ^GJViewStyle *(UIFont *f){
+        UIButton *bt = (UIButton *)self.view;
+        bt.titleLabel.font = f;
+        return self;
+    };
+}
 -(GJViewStyle * _Nonnull (^)(CGFloat, CGFloat, CGFloat, CGFloat))setContentEdgeInsets{
     return ^GJViewStyle *(CGFloat top, CGFloat left, CGFloat bottom, CGFloat right){
         UIButton *bt = (UIButton *)self.view;

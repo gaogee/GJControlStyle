@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GJImageViewStyle : GJViewStyle
 @property (nonatomic, copy, readonly) GJViewStyle *(^image)(UIImage *image);
 @property (nonatomic, copy, readonly) GJViewStyle *(^imageName)(NSString *imageName);
+@property (nonatomic, copy, readonly) GJViewStyle *(^tintColor)(UIColor *tintColor);
+
 @end
 
 NS_ASSUME_NONNULL_END
