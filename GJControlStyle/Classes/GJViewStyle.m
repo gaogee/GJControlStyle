@@ -8,6 +8,8 @@
 
 #import "GJViewStyle.h"
 #import "GJViewStyleCategory.h"
+#import <objc/runtime.h>
+
 @implementation GJViewStyle
 
 -(id)gj_style:(void (^)(GJViewStyle * _Nonnull))style{
@@ -116,6 +118,20 @@
         if (mb) {
             [self.view gj_addLongPressBlock:mb];
         }
+        return self;
+    };
+}
+
+-(GJViewStyle * _Nonnull (^)(UIView * _Nonnull))addSubview{
+    return ^GJViewStyle  *(UIView *sv){
+        [self.view addSubview:sv];
+        return self;
+    };
+}
+
+-(GJViewStyle * _Nonnull (^)(UIView * _Nonnull))addtoSupview{
+    return ^GJViewStyle  *(UIView *pv){
+        [pv addSubview:self.view];
         return self;
     };
 }

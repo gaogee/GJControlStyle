@@ -8,6 +8,7 @@
 
 #import "GJButtonStyle.h"
 #import "GJViewStyleCategory.h"
+
 @implementation GJButtonStyle
 
 -(GJViewStyle * _Nonnull (^)(NSString * _Nonnull, UIControlState))title{

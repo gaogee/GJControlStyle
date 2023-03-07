@@ -18,19 +18,23 @@
 {
     [super viewDidLoad];
     UILabel *lab = [[UILabel alloc]init];
-    [self.view addSubview:lab];
-    [lab gj_labelStyle:^(GJLabelStyle * _Nonnull style) {
-        style.frame(CGRectMake(0, 0, 100, 100));
-        style.backgroundColor([UIColor redColor]);
-        style.text(@"sdjasjdk");
-    }];
-    UIButton *btn = [[UIButton alloc]init];
-    [btn gj_buttonStyle:^(GJButtonStyle * _Nonnull style) {
+    [lab gj_style:^(GJLabelStyle * _Nonnull style) {
         style.frame(CGRectMake(100, 100, 100, 100));
-        style.title(@"333", UIControlStateNormal);
+        style.backgroundColor([UIColor redColor]);
+        style.text(@"lab");
+        style.textAlignment(NSTextAlignmentCenter);
+        style.addtoSupview(self.view);
+    }];
+    lab.style.text(@"label");
+    
+    UIButton *btn = [[UIButton alloc]init];
+    [self.view addSubview:btn];
+    [btn gj_style:^(GJButtonStyle * _Nonnull style) {
+        style.frame(CGRectMake(220, 100, 100, 100));
+        style.title(@"btn", UIControlStateNormal);
         style.backgroundColor([UIColor blueColor]);
     }];
-    [self.view addSubview:btn];
+    
     
 
 	// Do any additional setup after loading the view, typically from a nib.

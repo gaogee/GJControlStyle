@@ -21,7 +21,9 @@ typedef NS_ENUM(NSInteger, UIButtonLayoutStyle) {
 
 @interface UIView (GJControlStyle)
 
-- (void)gj_viewStyle:(void(^)(GJViewStyle *style))style;
+@property (nonatomic, strong, readonly) GJViewStyle *style;
+
+- (void)gj_style:(void(^)(GJViewStyle *style))style;
 
 - (void)gj_addTapBlock:(addViewGestureBlock)gestureBlock;
 
@@ -30,13 +32,17 @@ typedef NS_ENUM(NSInteger, UIButtonLayoutStyle) {
 
 @interface UILabel (GJControlStyle)
 
-- (void)gj_labelStyle:(void(^)(GJLabelStyle *style))style;
+@property (nonatomic, strong, readonly) GJLabelStyle *style;
+
+- (void)gj_style:(void(^)(GJLabelStyle *style))style;
 
 @end
 
 @interface UIButton (GJControlStyle)
 
-- (void)gj_buttonStyle:(void(^)(GJButtonStyle *style))style;
+@property (nonatomic, strong, readonly) GJButtonStyle *style;
+
+- (void)gj_style:(void(^)(GJButtonStyle *style))style;
 
 - (void)gj_addTargetWithControlEvent:(UIControlEvents)event block:(addTargetBlock)actionBlock;
 
@@ -46,7 +52,9 @@ typedef NS_ENUM(NSInteger, UIButtonLayoutStyle) {
 
 @interface UIImageView (GJControlStyle)
 
-- (void)gj_imageViewStyle:(void(^)(GJImageViewStyle *style))style;
+@property (nonatomic, strong, readonly) GJImageViewStyle *style;
+
+- (void)gj_style:(void(^)(GJImageViewStyle *style))style;
 
 @end
 NS_ASSUME_NONNULL_END

@@ -9,10 +9,21 @@
 #import "GJViewStyleCategory.h"
 #import <objc/runtime.h>
 @implementation UIView (GJControlStyle)
+@dynamic style;
+static char  * viewStyleKey ="viewStyleKey";
 
-- (void)gj_viewStyle:(void(^)(GJViewStyle *style))style{
+-(void)setStyle:(GJViewStyle *)style{
+    objc_setAssociatedObject(self, viewStyleKey, style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+-(GJViewStyle *)style{
+    objc_getAssociatedObject(self, viewStyleKey);
     GJViewStyle *s = [[GJViewStyle alloc]init];
     s.view = self;
+    return s;
+}
+
+- (void)gj_style:(void(^)(GJViewStyle *style))style{
+    GJViewStyle *s = self.style;
     if (style) {
         style(s);
     }
@@ -64,9 +75,22 @@
 @end
 
 @implementation UILabel (GJControlStyle)
+@dynamic style;
+static char  * labelStyleKey ="labelStyleKey";
 
-- (void)gj_labelStyle:(void(^)(GJLabelStyle *style))style{
+-(void)setStyle:(GJLabelStyle *)style{
+    objc_setAssociatedObject(self, labelStyleKey, style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(GJLabelStyle *)style{
+    objc_getAssociatedObject(self, labelStyleKey);
     GJLabelStyle *s = [[GJLabelStyle alloc]init];
+    s.view = self;
+    return s;
+}
+
+- (void)gj_style:(void(^)(GJLabelStyle *style))style{
+    GJLabelStyle *s = self.style;
     s.view = self;
     if (style) {
         style(s);
@@ -75,10 +99,22 @@
 @end
 
 @implementation UIButton (GJControlStyle)
+@dynamic style;
+static char  * buttonStyleKey ="buttonStyleKey";
 
-- (void)gj_buttonStyle:(void(^)(GJButtonStyle *style))style{
+-(void)setStyle:(GJButtonStyle *)style{
+    objc_setAssociatedObject(self, buttonStyleKey, style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(GJButtonStyle *)style{
+    objc_getAssociatedObject(self, buttonStyleKey);
     GJButtonStyle *s = [[GJButtonStyle alloc]init];
     s.view = self;
+    return s;
+}
+
+- (void)gj_style:(void(^)(GJButtonStyle *style))style{
+    GJButtonStyle *s = self.style;
     if (style) {
         style(s);
     }
@@ -175,9 +211,22 @@
 @end
 
 @implementation UIImageView (GJControlStyle)
+@dynamic style;
+static char  * imageViewStyleKey ="imageViewStyleKey";
 
-- (void)gj_imageViewStyle:(void(^)(GJImageViewStyle *style))style{
+-(void)setStyle:(GJImageViewStyle *)style{
+    objc_setAssociatedObject(self, imageViewStyleKey, style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(GJImageViewStyle *)style{
+    objc_getAssociatedObject(self, imageViewStyleKey);
     GJImageViewStyle *s = [[GJImageViewStyle alloc]init];
+    s.view = self;
+    return s;
+}
+
+- (void)gj_style:(void(^)(GJImageViewStyle *style))style{
+    GJImageViewStyle *s =self.style;;
     s.view = self;
     if (style) {
         style(s);

@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) GJViewStyle  *(^tapBlock)(addViewGestureBlock tapGestureBlcok);
 @property (nonatomic, copy, readonly) GJViewStyle  *(^longPressBlock)(addViewGestureBlock longPressGestureBlock);
 
+@property (nonatomic, copy, readonly) GJViewStyle  *(^addSubview)(UIView *subview);
+@property (nonatomic, copy, readonly) GJViewStyle  *(^addtoSupview)(UIView *supview);
 @end
 
 NS_ASSUME_NONNULL_END
