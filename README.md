@@ -7,9 +7,6 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-
  //Label Example 1:
     
     UILabel *lab1 = [[UILabel alloc]init];
@@ -57,6 +54,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
     
 
 ## Requirements
+
+This library requires iOS 11.0+ and Xcode 9.0+.
 
 ## Installation
 
