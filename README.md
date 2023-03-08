@@ -8,6 +8,7 @@
 ## Example
 
  //Label Example 1:
+
     UILabel *lab1 = [[UILabel alloc]init];
     [lab1 gj_style:^(GJLabelStyle * _Nonnull style) {
         style.frame(CGRectMake(10, 100, 100, 30));
@@ -16,6 +17,7 @@
         style.textAlignment(NSTextAlignmentCenter);
         style.addtoSupview(self.view);
     }];
+    
     //Label Example 2:
     UILabel *lab2 = [[UILabel alloc]init];
     lab2.gj_style.frame(CGRectMake(150, 100, 100, 30));
