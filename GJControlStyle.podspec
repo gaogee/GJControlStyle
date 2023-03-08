@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GJControlStyle'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = 'Chain create UI controls.'
 
 # This description is used to generate tags and improve search results.
