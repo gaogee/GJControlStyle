@@ -26,7 +26,7 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'gaogee' => 'gaoju_os@163.com' }
   s.source           = { :git => 'https://github.com/gaogee/GJControlStyle.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://www.zhihu.com/people/flutter-45-53<gaogee>'
 
   s.ios.deployment_target = '11.0'
 
