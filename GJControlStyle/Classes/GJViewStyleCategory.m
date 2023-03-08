@@ -46,7 +46,7 @@ static char  * viewStyleKey ="viewStyleKey";
     if (gesture.state == UIGestureRecognizerStateRecognized){
         addViewGestureBlock gestureBlock = objc_getAssociatedObject(self, _cmd);
         if (gestureBlock){
-            gestureBlock();
+            gestureBlock(self);
         }
     }
 }
@@ -68,7 +68,7 @@ static char  * viewStyleKey ="viewStyleKey";
     if (gesture.state == UIGestureRecognizerStateRecognized){
         addViewGestureBlock gestureBlock = objc_getAssociatedObject(self, _cmd);
         if (gestureBlock){
-            gestureBlock();
+            gestureBlock(self);
         }
     }
 }
@@ -227,6 +227,31 @@ static char  * imageViewStyleKey ="imageViewStyleKey";
 
 - (void)gj_style:(void(^)(GJImageViewStyle *style))style{
     GJImageViewStyle *s =self.style;;
+    s.view = self;
+    if (style) {
+        style(s);
+    }
+}
+
+@end
+
+@implementation UITextField (GJControlStyle)
+@dynamic style;
+static char  * textFieldStyleKey ="textFieldStyleKey";
+
+-(void)setStyle:(GJTextFieldStyle *)style{
+    objc_setAssociatedObject(self, textFieldStyleKey, style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(GJTextFieldStyle *)style{
+    objc_getAssociatedObject(self, textFieldStyleKey);
+    GJTextFieldStyle *s = [[GJTextFieldStyle alloc]init];
+    s.view = self;
+    return s;
+}
+
+- (void)gj_style:(void(^)(GJTextFieldStyle *style))style{
+    GJTextFieldStyle *s =self.style;;
     s.view = self;
     if (style) {
         style(s);

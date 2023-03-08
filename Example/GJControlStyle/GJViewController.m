@@ -26,6 +26,9 @@
         style.addtoSupview(self.view);
     }];
     lab.style.text(@"label");
+    lab.style.tapBlock(^(UIView * _Nullable view) {
+        
+    });
     
     UIButton *btn = [[UIButton alloc]init];
     [self.view addSubview:btn];

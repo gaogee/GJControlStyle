@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) GJViewStyle *(^backgroundImage)(UIImage *backgroundImage,UIControlState state);
 @property (nonatomic, copy, readonly) GJViewStyle *(^backgroundImageName)(NSString *backgroundImageName,UIControlState state);
 
-@property (nonatomic, copy, readonly) GJViewStyle *(^selected)(BOOL *selected);
+@property (nonatomic, copy, readonly) GJViewStyle *(^selected)(BOOL selected);
 
 @property (nonatomic, copy, readonly) GJViewStyle  *(^imageViewContentMode)(UIViewContentMode contentMode);
 @property (nonatomic, copy, readonly) GJViewStyle *(^titleLabelContentMode)(UIViewContentMode contentMode);

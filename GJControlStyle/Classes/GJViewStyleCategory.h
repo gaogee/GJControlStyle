@@ -11,6 +11,7 @@
 #import "GJLabelStyle.h"
 #import "GJButtonStyle.h"
 #import "GJImageViewStyle.h"
+#import "GJTextFieldStyle.h"
 NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger, UIButtonLayoutStyle) {
     UIButtonLayoutStyleLeftImageRightTitle,
@@ -55,6 +56,14 @@ typedef NS_ENUM(NSInteger, UIButtonLayoutStyle) {
 @property (nonatomic, strong, readonly) GJImageViewStyle *style;
 
 - (void)gj_style:(void(^)(GJImageViewStyle *style))style;
+
+@end
+
+@interface UITextField (GJControlStyle)
+
+@property (nonatomic, strong, readonly) GJTextFieldStyle *style;
+
+- (void)gj_style:(void(^)(GJTextFieldStyle *style))style;
 
 @end
 NS_ASSUME_NONNULL_END

@@ -103,8 +103,8 @@
     };
 }
 
--(GJViewStyle * _Nonnull (^)(BOOL * _Nonnull))selected{
-    return ^GJViewStyle  *(BOOL *sel){
+- (GJViewStyle * _Nonnull (^)(BOOL))selected{
+    return ^GJViewStyle  *(BOOL sel){
         UIButton *bt = (UIButton *)self.view;
         bt.selected = sel;
         return self;

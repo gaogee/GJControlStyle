@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 //#import "GJControlStyle.h"
-typedef void(^addViewGestureBlock)(void);
+typedef void(^addViewGestureBlock)(UIView * _Nullable view);
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GJViewStyle : NSObject

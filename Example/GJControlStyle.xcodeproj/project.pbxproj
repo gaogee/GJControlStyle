@@ -23,6 +23,10 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B3AD0E25666E9A1A13C4191C /* Pods_GJControlStyle_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93A611477948E6230008A7F /* Pods_GJControlStyle_Tests.framework */; };
+		E86F004429B832A1005FACD6 /* GJTextFieldStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A327529B82C9900E3D539 /* GJTextFieldStyle.m */; };
+		E86F004529B832A4005FACD6 /* GJScrollViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A327A29B82D4800E3D539 /* GJScrollViewStyle.m */; };
+		E86F004629B832A9005FACD6 /* GJTableViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A327C29B82D6400E3D539 /* GJTableViewStyle.m */; };
+		E86F004729B832AD005FACD6 /* GJCollectionViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A328229B82E2000E3D539 /* GJCollectionViewStyle.m */; };
 		E8EF724529B5E7F50023CD35 /* GJViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF723B29B5E7F30023CD35 /* GJViewStyle.m */; };
 		E8EF724629B5E7F50023CD35 /* GJLabelStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF723C29B5E7F30023CD35 /* GJLabelStyle.m */; };
 		E8EF724729B5E7F50023CD35 /* GJImageViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF723D29B5E7F30023CD35 /* GJImageViewStyle.m */; };
@@ -71,6 +75,14 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88545A270321D2FA103718AA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E4E08B463B643248B48C6289 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E89A327529B82C9900E3D539 /* GJTextFieldStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GJTextFieldStyle.m; path = ../GJControlStyle/Classes/GJTextFieldStyle.m; sourceTree = "<group>"; };
+		E89A327629B82C9900E3D539 /* GJTextFieldStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GJTextFieldStyle.h; path = ../GJControlStyle/Classes/GJTextFieldStyle.h; sourceTree = "<group>"; };
+		E89A327929B82D4800E3D539 /* GJScrollViewStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GJScrollViewStyle.h; path = ../GJControlStyle/Classes/GJScrollViewStyle.h; sourceTree = "<group>"; };
+		E89A327A29B82D4800E3D539 /* GJScrollViewStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GJScrollViewStyle.m; path = ../GJControlStyle/Classes/GJScrollViewStyle.m; sourceTree = "<group>"; };
+		E89A327B29B82D6400E3D539 /* GJTableViewStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GJTableViewStyle.h; path = ../GJControlStyle/Classes/GJTableViewStyle.h; sourceTree = "<group>"; };
+		E89A327C29B82D6400E3D539 /* GJTableViewStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GJTableViewStyle.m; path = ../GJControlStyle/Classes/GJTableViewStyle.m; sourceTree = "<group>"; };
+		E89A328129B82E2000E3D539 /* GJCollectionViewStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GJCollectionViewStyle.h; path = ../GJControlStyle/Classes/GJCollectionViewStyle.h; sourceTree = "<group>"; };
+		E89A328229B82E2000E3D539 /* GJCollectionViewStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GJCollectionViewStyle.m; path = ../GJControlStyle/Classes/GJCollectionViewStyle.m; sourceTree = "<group>"; };
 		E8EF723B29B5E7F30023CD35 /* GJViewStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GJViewStyle.m; path = ../GJControlStyle/Classes/GJViewStyle.m; sourceTree = "<group>"; };
 		E8EF723C29B5E7F30023CD35 /* GJLabelStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GJLabelStyle.m; path = ../GJControlStyle/Classes/GJLabelStyle.m; sourceTree = "<group>"; };
 		E8EF723D29B5E7F30023CD35 /* GJImageViewStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GJImageViewStyle.m; path = ../GJControlStyle/Classes/GJImageViewStyle.m; sourceTree = "<group>"; };
@@ -198,14 +210,22 @@
 				E8EF724E29B5ECF90023CD35 /* GJControlStyle.h */,
 				E8EF724F29B5ECF90023CD35 /* GJViewStyleCategory.h */,
 				E8EF725029B5ECFA0023CD35 /* GJViewStyleCategory.m */,
-				E8EF724129B5E7F40023CD35 /* GJImageViewStyle.h */,
-				E8EF723D29B5E7F30023CD35 /* GJImageViewStyle.m */,
+				E8EF724029B5E7F40023CD35 /* GJViewStyle.h */,
+				E8EF723B29B5E7F30023CD35 /* GJViewStyle.m */,
 				E8EF724329B5E7F40023CD35 /* GJButtonStyle.h */,
 				E8EF724429B5E7F40023CD35 /* GJButtonStyle.m */,
 				E8EF723E29B5E7F30023CD35 /* GJLabelStyle.h */,
 				E8EF723C29B5E7F30023CD35 /* GJLabelStyle.m */,
-				E8EF724029B5E7F40023CD35 /* GJViewStyle.h */,
-				E8EF723B29B5E7F30023CD35 /* GJViewStyle.m */,
+				E8EF724129B5E7F40023CD35 /* GJImageViewStyle.h */,
+				E8EF723D29B5E7F30023CD35 /* GJImageViewStyle.m */,
+				E89A327629B82C9900E3D539 /* GJTextFieldStyle.h */,
+				E89A327529B82C9900E3D539 /* GJTextFieldStyle.m */,
+				E89A327929B82D4800E3D539 /* GJScrollViewStyle.h */,
+				E89A327A29B82D4800E3D539 /* GJScrollViewStyle.m */,
+				E89A327B29B82D6400E3D539 /* GJTableViewStyle.h */,
+				E89A327C29B82D6400E3D539 /* GJTableViewStyle.m */,
+				E89A328129B82E2000E3D539 /* GJCollectionViewStyle.h */,
+				E89A328229B82E2000E3D539 /* GJCollectionViewStyle.m */,
 				E4E08B463B643248B48C6289 /* README.md */,
 				88545A270321D2FA103718AA /* LICENSE */,
 			);
@@ -397,7 +417,11 @@
 				E8EF725129B5ECFA0023CD35 /* GJViewStyleCategory.m in Sources */,
 				E8EF724729B5E7F50023CD35 /* GJImageViewStyle.m in Sources */,
 				E8EF724529B5E7F50023CD35 /* GJViewStyle.m in Sources */,
+				E86F004629B832A9005FACD6 /* GJTableViewStyle.m in Sources */,
+				E86F004729B832AD005FACD6 /* GJCollectionViewStyle.m in Sources */,
+				E86F004429B832A1005FACD6 /* GJTextFieldStyle.m in Sources */,
 				6003F5A7195388D20070C39A /* GJViewController.m in Sources */,
+				E86F004529B832A4005FACD6 /* GJScrollViewStyle.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
