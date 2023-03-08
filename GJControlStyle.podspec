@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GJControlStyle'
   s.version          = '1.0.6'
-  s.summary          = 'Chain create UI controls.'
+  s.summary          = 'Point syntax to create UI controls.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: Point syntax to create UI controls to make the creation of controls more concise
                        DESC
 
   s.homepage         = 'https://github.com/gaogee/GJControlStyle'

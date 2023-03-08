@@ -2,7 +2,7 @@
 //  GJTableViewStyle.m
 //  GJControlStyle
 //
-//  Created by zhanggaoju on 2023/3/8.
+//  Created by gaogee on 2023/3/8.
 //  Copyright © 2023 gaogee. All rights reserved.
 //
 
