@@ -7,12 +7,16 @@
 
 ## Example
 
- //Label Example 1:
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+
+ //Label Example 1:
+    
     UILabel *lab1 = [[UILabel alloc]init];
     [lab1 gj_style:^(GJLabelStyle * _Nonnull style) {
         style.frame(CGRectMake(10, 100, 100, 30));
-        style.backgroundColor([UIColor redColor]);
+        style.backgroundColor(UIColor.redColor);
+        style.textColor(UIColor.whiteColor);
         style.text(@"lab1");
         style.textAlignment(NSTextAlignmentCenter);
         style.addtoSupview(self.view);
@@ -22,12 +26,13 @@
     
     UILabel *lab2 = [[UILabel alloc]init];
     lab2.gj_style.frame(CGRectMake(150, 100, 100, 30));
-    lab2.gj_style.backgroundColor([UIColor redColor]);
+    lab2.gj_style.backgroundColor(UIColor.redColor);
+    lab2.gj_style.textColor(UIColor.whiteColor);
     lab2.gj_style.text(@"lab2");
     lab2.gj_style.textAlignment(NSTextAlignmentCenter);
     lab2.gj_style.addtoSupview(self.view);
     lab2.gj_style.tapBlock(^(UIView * _Nullable view) {
-        NSLog(@"Click label");
+        NSLog(@"Click label2");
     });
     
     //Button Example 1:
@@ -46,11 +51,10 @@
     btn2.gj_style.frame(CGRectMake(150, 150, 100, 30));
     btn2.gj_style.title(@"btn2", UIControlStateNormal);
     btn2.gj_style.backgroundColor([UIColor blueColor]);
-    [self.view addSubview:btn1];
+    btn2.gj_style.addtoSupview(self.view);
     
     //You can also create imageView, textFiled, tableView…
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+    
 
 ## Requirements
 
