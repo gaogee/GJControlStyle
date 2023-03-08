@@ -17,10 +17,10 @@
     };
 }
 
--(GJViewStyle * _Nonnull (^)(CGFloat, CGFloat))contentOffset{
-    return ^GJViewStyle *(CGFloat x, CGFloat y){
+-(GJViewStyle * _Nonnull (^)(CGFloat, CGFloat, BOOL))contentOffset{
+    return ^GJViewStyle *(CGFloat x, CGFloat y, BOOL a){
         UIScrollView *sv = (UIScrollView *)self.view;
-        sv.contentOffset = CGPointMake(x, y);
+        [sv setContentOffset:CGPointMake(x, y) animated:a];
         return self;
     };
 }
@@ -60,7 +60,7 @@
 -(GJViewStyle * _Nonnull (^)(BOOL))showsVerticalScrollIndicator{
     return ^GJViewStyle *(BOOL s){
         UIScrollView *sv = (UIScrollView *)self.view;
-        sv.bounces = s;
+        sv.showsVerticalScrollIndicator = s;
         return self;
     };
 }
@@ -68,7 +68,7 @@
 -(GJViewStyle * _Nonnull (^)(BOOL))showsHorizontalScrollIndicator{
     return ^GJViewStyle *(BOOL s){
         UIScrollView *sv = (UIScrollView *)self.view;
-        sv.bounces = s;
+        sv.showsHorizontalScrollIndicator = s;
         return self;
     };
 }
@@ -76,7 +76,7 @@
 -(GJViewStyle * _Nonnull (^)(BOOL))alwaysBounceVertical{
     return ^GJViewStyle *(BOOL s){
         UIScrollView *sv = (UIScrollView *)self.view;
-        sv.bounces = s;
+        sv.alwaysBounceVertical = s;
         return self;
     };
 }
@@ -84,7 +84,7 @@
 -(GJViewStyle * _Nonnull (^)(BOOL))alwaysBounceHorizontal{
     return ^GJViewStyle *(BOOL s){
         UIScrollView *sv = (UIScrollView *)self.view;
-        sv.bounces = s;
+        sv.alwaysBounceHorizontal = s;
         return self;
     };
 }

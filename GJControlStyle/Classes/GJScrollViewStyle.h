@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GJScrollViewStyle : GJViewStyle
 
 @property (nonatomic, copy, readonly) GJViewStyle *(^contentSize)(CGFloat width, CGFloat height);
-@property (nonatomic, copy, readonly) GJViewStyle *(^contentOffset)(CGFloat x, CGFloat y);
+@property (nonatomic, copy, readonly) GJViewStyle *(^contentOffset)(CGFloat x, CGFloat y, BOOL animated);
 @property (nonatomic, copy, readonly) GJViewStyle *(^contentInset)(CGFloat top, CGFloat left, CGFloat bottom, CGFloat right);
 
 @property (nonatomic, copy, readonly) GJViewStyle *(^pagingEnabled)(BOOL pagingEnabled);
