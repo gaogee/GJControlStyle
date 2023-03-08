@@ -70,6 +70,10 @@ pod 'GJControlStyle'
 
 gaogee, gaoju_os@163.com
 
+## Technical blog
+
+https://www.zhihu.com/people/flutter-45-53
+
 ## License
 
 GJControlStyle is available under the MIT license. See the LICENSE file for more info.
