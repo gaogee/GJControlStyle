@@ -9,21 +9,21 @@
 #import "GJViewStyleCategory.h"
 #import <objc/runtime.h>
 @implementation UIView (GJControlStyle)
-@dynamic style;
-static char  * viewStyleKey ="viewStyleKey";
+@dynamic gj_style;
+static char  * view_styleKey ="view_styleKey";
 
--(void)setStyle:(GJViewStyle *)style{
-    objc_setAssociatedObject(self, viewStyleKey, style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+-(void)setGj_style:(GJViewStyle * _Nonnull)gj_style{
+    objc_setAssociatedObject(self, view_styleKey, gj_style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
--(GJViewStyle *)style{
-    objc_getAssociatedObject(self, viewStyleKey);
+-(GJViewStyle * _Nonnull)gj_style{
+    objc_getAssociatedObject(self, view_styleKey);
     GJViewStyle *s = [[GJViewStyle alloc]init];
     s.view = self;
     return s;
 }
 
 - (void)gj_style:(void(^)(GJViewStyle *style))style{
-    GJViewStyle *s = self.style;
+    GJViewStyle *s = self.gj_style;
     if (style) {
         style(s);
     }
@@ -75,22 +75,22 @@ static char  * viewStyleKey ="viewStyleKey";
 @end
 
 @implementation UILabel (GJControlStyle)
-@dynamic style;
-static char  * labelStyleKey ="labelStyleKey";
+@dynamic gj_style;
+static char  * label_styleKey ="label_styleKey";
 
--(void)setStyle:(GJLabelStyle *)style{
-    objc_setAssociatedObject(self, labelStyleKey, style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+-(void)setGj_style:(GJLabelStyle * _Nonnull)gj_style{
+    objc_setAssociatedObject(self, label_styleKey, gj_style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(GJLabelStyle *)style{
-    objc_getAssociatedObject(self, labelStyleKey);
+-(GJLabelStyle * _Nonnull)gj_style{
+    objc_getAssociatedObject(self, label_styleKey);
     GJLabelStyle *s = [[GJLabelStyle alloc]init];
     s.view = self;
     return s;
 }
 
 - (void)gj_style:(void(^)(GJLabelStyle *style))style{
-    GJLabelStyle *s = self.style;
+    GJLabelStyle *s = self.gj_style;
     s.view = self;
     if (style) {
         style(s);
@@ -99,22 +99,22 @@ static char  * labelStyleKey ="labelStyleKey";
 @end
 
 @implementation UIButton (GJControlStyle)
-@dynamic style;
-static char  * buttonStyleKey ="buttonStyleKey";
+@dynamic gj_style;
+static char  * button_styleKey ="button_styleKey";
 
--(void)setStyle:(GJButtonStyle *)style{
-    objc_setAssociatedObject(self, buttonStyleKey, style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+-(void)setGj_style:(GJButtonStyle * _Nonnull)gj_style{
+    objc_setAssociatedObject(self, button_styleKey, gj_style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(GJButtonStyle *)style{
-    objc_getAssociatedObject(self, buttonStyleKey);
+-(GJButtonStyle * _Nonnull)gj_style{
+    objc_getAssociatedObject(self, button_styleKey);
     GJButtonStyle *s = [[GJButtonStyle alloc]init];
     s.view = self;
     return s;
 }
 
 - (void)gj_style:(void(^)(GJButtonStyle *style))style{
-    GJButtonStyle *s = self.style;
+    GJButtonStyle *s = self.gj_style;
     if (style) {
         style(s);
     }
@@ -211,22 +211,22 @@ static char  * buttonStyleKey ="buttonStyleKey";
 @end
 
 @implementation UIImageView (GJControlStyle)
-@dynamic style;
-static char  * imageViewStyleKey ="imageViewStyleKey";
+@dynamic gj_style;
+static char  * imageView_styleKey ="imageView_styleKey";
 
--(void)setStyle:(GJImageViewStyle *)style{
-    objc_setAssociatedObject(self, imageViewStyleKey, style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+-(void)setGj_style:(GJImageViewStyle * _Nonnull)gj_style{
+    objc_setAssociatedObject(self, imageView_styleKey, gj_style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(GJImageViewStyle *)style{
-    objc_getAssociatedObject(self, imageViewStyleKey);
+-(GJImageViewStyle * _Nonnull)gj_style{
+    objc_getAssociatedObject(self, imageView_styleKey);
     GJImageViewStyle *s = [[GJImageViewStyle alloc]init];
     s.view = self;
     return s;
 }
 
 - (void)gj_style:(void(^)(GJImageViewStyle *style))style{
-    GJImageViewStyle *s =self.style;;
+    GJImageViewStyle *s = self.gj_style;
     s.view = self;
     if (style) {
         style(s);
@@ -236,22 +236,97 @@ static char  * imageViewStyleKey ="imageViewStyleKey";
 @end
 
 @implementation UITextField (GJControlStyle)
-@dynamic style;
-static char  * textFieldStyleKey ="textFieldStyleKey";
+@dynamic gj_style;
+static char  * textFiel_styleKey ="textFiel_styleKey";
 
--(void)setStyle:(GJTextFieldStyle *)style{
-    objc_setAssociatedObject(self, textFieldStyleKey, style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+-(void)setGj_style:(GJTextFieldStyle * _Nonnull)gj_style{
+    objc_setAssociatedObject(self, textFiel_styleKey, gj_style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(GJTextFieldStyle *)style{
-    objc_getAssociatedObject(self, textFieldStyleKey);
+-(GJTextFieldStyle * _Nonnull)gj_style{
+    objc_getAssociatedObject(self, textFiel_styleKey);
     GJTextFieldStyle *s = [[GJTextFieldStyle alloc]init];
     s.view = self;
     return s;
 }
 
 - (void)gj_style:(void(^)(GJTextFieldStyle *style))style{
-    GJTextFieldStyle *s =self.style;;
+    GJTextFieldStyle *s = self.gj_style;
+    s.view = self;
+    if (style) {
+        style(s);
+    }
+}
+
+@end
+
+@implementation UIScrollView (GJControlStyle)
+@dynamic gj_style;
+static char  * scrollView_styleKey ="scrollView_styleKey";
+
+-(void)setGj_style:(GJScrollViewStyle * _Nonnull)gj_style{
+    objc_setAssociatedObject(self, scrollView_styleKey, gj_style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(GJScrollViewStyle * _Nonnull)gj_style{
+    objc_getAssociatedObject(self, scrollView_styleKey);
+    GJScrollViewStyle *s = [[GJScrollViewStyle alloc]init];
+    s.view = self;
+    return s;
+}
+
+- (void)gj_style:(void(^)(GJScrollViewStyle *style))style{
+    GJScrollViewStyle *s = self.gj_style;
+    s.view = self;
+    if (style) {
+        style(s);
+    }
+}
+
+@end
+
+@implementation UITableView (GJControlStyle)
+@dynamic gj_style;
+static char  * tableView_styleKey ="tableView_styleKey";
+
+-(void)setGj_style:(GJTableViewStyle * _Nonnull)gj_style{
+    objc_setAssociatedObject(self, tableView_styleKey, gj_style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(GJTableViewStyle *)gj_style{
+    objc_getAssociatedObject(self, tableView_styleKey);
+    GJTableViewStyle *s = [[GJTableViewStyle alloc]init];
+    s.view = self;
+    return s;
+}
+
+- (void)gj_style:(void(^)(GJTableViewStyle *style))style{
+    GJTableViewStyle *s = self.gj_style;
+    s.view = self;
+    if (style) {
+        style(s);
+    }
+}
+
+@end
+
+@implementation UICollectionView (GJControlStyle)
+@dynamic gj_style;
+static char  * collectionView_styleKey ="collectionView_styleKey";
+
+-(void)setGj_style:(GJCollectionViewStyle * _Nonnull)gj_style{
+    objc_setAssociatedObject(self, collectionView_styleKey, gj_style, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(GJCollectionViewStyle * _Nonnull)gj_style{
+    objc_getAssociatedObject(self, collectionView_styleKey);
+    GJCollectionViewStyle *s = [[GJCollectionViewStyle alloc]init];
+    s.view = self;
+    return s;
+}
+
+- (void)gj_style:(void(^)(GJCollectionViewStyle *style))style{
+    GJCollectionViewStyle *s = self.gj_style;
     s.view = self;
     if (style) {
         style(s);

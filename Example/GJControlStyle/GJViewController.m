@@ -25,8 +25,8 @@
         style.textAlignment(NSTextAlignmentCenter);
         style.addtoSupview(self.view);
     }];
-    lab.style.text(@"label");
-    lab.style.tapBlock(^(UIView * _Nullable view) {
+    lab.gj_style.text(@"label");
+    lab.gj_style.tapBlock(^(UIView * _Nullable view) {
         
     });
     

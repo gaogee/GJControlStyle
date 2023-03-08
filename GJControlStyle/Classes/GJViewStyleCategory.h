@@ -12,6 +12,9 @@
 #import "GJButtonStyle.h"
 #import "GJImageViewStyle.h"
 #import "GJTextFieldStyle.h"
+#import "GJScrollViewStyle.h"
+#import "GJTableViewStyle.h"
+#import "GJCollectionViewStyle.h"
 NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger, UIButtonLayoutStyle) {
     UIButtonLayoutStyleLeftImageRightTitle,
@@ -22,7 +25,7 @@ typedef NS_ENUM(NSInteger, UIButtonLayoutStyle) {
 
 @interface UIView (GJControlStyle)
 
-@property (nonatomic, strong, readonly) GJViewStyle *style;
+@property (nonatomic, strong, readonly) GJViewStyle *gj_style;
 
 - (void)gj_style:(void(^)(GJViewStyle *style))style;
 
@@ -33,7 +36,7 @@ typedef NS_ENUM(NSInteger, UIButtonLayoutStyle) {
 
 @interface UILabel (GJControlStyle)
 
-@property (nonatomic, strong, readonly) GJLabelStyle *style;
+@property (nonatomic, strong, readonly) GJLabelStyle *gj_style;
 
 - (void)gj_style:(void(^)(GJLabelStyle *style))style;
 
@@ -41,7 +44,7 @@ typedef NS_ENUM(NSInteger, UIButtonLayoutStyle) {
 
 @interface UIButton (GJControlStyle)
 
-@property (nonatomic, strong, readonly) GJButtonStyle *style;
+@property (nonatomic, strong, readonly) GJButtonStyle *gj_style;
 
 - (void)gj_style:(void(^)(GJButtonStyle *style))style;
 
@@ -53,7 +56,7 @@ typedef NS_ENUM(NSInteger, UIButtonLayoutStyle) {
 
 @interface UIImageView (GJControlStyle)
 
-@property (nonatomic, strong, readonly) GJImageViewStyle *style;
+@property (nonatomic, strong, readonly) GJImageViewStyle *gj_style;
 
 - (void)gj_style:(void(^)(GJImageViewStyle *style))style;
 
@@ -61,9 +64,33 @@ typedef NS_ENUM(NSInteger, UIButtonLayoutStyle) {
 
 @interface UITextField (GJControlStyle)
 
-@property (nonatomic, strong, readonly) GJTextFieldStyle *style;
+@property (nonatomic, strong, readonly) GJTextFieldStyle *gj_style;
 
 - (void)gj_style:(void(^)(GJTextFieldStyle *style))style;
+
+@end
+
+@interface UIScrollView (GJControlStyle)
+
+@property (nonatomic, strong, readonly) GJScrollViewStyle *gj_style;
+
+- (void)gj_style:(void(^)(GJScrollViewStyle *style))style;
+
+@end
+
+@interface UITableView (GJControlStyle)
+
+@property (nonatomic, strong, readonly) GJTableViewStyle *gj_style;
+
+- (void)gj_style:(void(^)(GJTableViewStyle *style))style;
+
+@end
+
+@interface UICollectionView (GJControlStyle)
+
+@property (nonatomic, strong, readonly) GJCollectionViewStyle *gj_style;
+
+- (void)gj_style:(void(^)(GJCollectionViewStyle *style))style;
 
 @end
 NS_ASSUME_NONNULL_END
