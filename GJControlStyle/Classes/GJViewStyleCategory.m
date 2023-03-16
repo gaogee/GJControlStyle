@@ -133,79 +133,52 @@ static char  * button_styleKey ="button_styleKey";
 }
 
 -(void)gj_setLayoutStyle:(UIButtonLayoutStyle)style imageTitleSpace:(CGFloat)space{
-    if (@available(iOS 15.0, *)) {
-        UIButtonConfiguration *config = [UIButtonConfiguration plainButtonConfiguration];
-        switch (style) {
-            case UIButtonLayoutStyleLeftImageRightTitle:
-                config.imagePlacement = NSDirectionalRectEdgeLeading;
-                break;
-                
-            case UIButtonLayoutStyleLeftTitleRightImage:
-                config.imagePlacement = NSDirectionalRectEdgeTrailing;
-                break;
-                
-            case UIButtonLayoutStyleTopImageBottomTitle:
-                config.imagePlacement = NSDirectionalRectEdgeTop;
-                break;
-                
-            case UIButtonLayoutStyleTopTitleBottomImage:
-                config.imagePlacement = NSDirectionalRectEdgeBottom;
-                break;
-                
-            default:
-                config.imagePlacement = NSDirectionalRectEdgeAll;
-                break;
-        }
-        config.imagePadding = space;
-        self.configuration = config;
+    CGFloat imageWith = self.imageView.frame.size.width;
+    CGFloat imageHeight = self.imageView.frame.size.height;
+    
+    CGFloat labelWidth = 0.0;
+    CGFloat labelHeight = 0.0;
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0) {
+        labelWidth = self.titleLabel.intrinsicContentSize.width;
+        labelHeight = self.titleLabel.intrinsicContentSize.height;
     } else {
-        CGFloat imageWith = self.imageView.frame.size.width;
-        CGFloat imageHeight = self.imageView.frame.size.height;
-        
-        CGFloat labelWidth = 0.0;
-        CGFloat labelHeight = 0.0;
-        if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0) {
-            labelWidth = self.titleLabel.intrinsicContentSize.width;
-            labelHeight = self.titleLabel.intrinsicContentSize.height;
-        } else {
-            labelWidth = self.titleLabel.frame.size.width;
-            labelHeight = self.titleLabel.frame.size.height;
-        }
-        
-        UIEdgeInsets imageEdgeInsets = UIEdgeInsetsZero;
-        UIEdgeInsets labelEdgeInsets = UIEdgeInsetsZero;
-        
-        switch (style) {
-            case UIButtonLayoutStyleTopImageBottomTitle:
-            {
-                imageEdgeInsets = UIEdgeInsetsMake(-labelHeight-space/2.0, 0, 0, -labelWidth);
-                labelEdgeInsets = UIEdgeInsetsMake(0, -imageWith, -imageHeight-space/2.0, 0);
-            }
-                break;
-            case UIButtonLayoutStyleLeftImageRightTitle:
-            {
-                imageEdgeInsets = UIEdgeInsetsMake(0, -space/2.0, 0, space/2.0);
-                labelEdgeInsets = UIEdgeInsetsMake(0, space/2.0, 0, -space/2.0);
-            }
-                break;
-            case UIButtonLayoutStyleTopTitleBottomImage:
-            {
-                imageEdgeInsets = UIEdgeInsetsMake(0, 0, -labelHeight-space/2.0, -labelWidth);
-                labelEdgeInsets = UIEdgeInsetsMake(-imageHeight-space/2.0, -imageWith, 0, 0);
-            }
-                break;
-            case UIButtonLayoutStyleLeftTitleRightImage:
-            {
-                imageEdgeInsets = UIEdgeInsetsMake(0, labelWidth+space/2.0, 0, -labelWidth-space/2.0);
-                labelEdgeInsets = UIEdgeInsetsMake(0, -imageWith-space/2.0, 0, imageWith+space/2.0);
-            }
-                break;
-            default:
-                break;
-        }
-        self.titleEdgeInsets = labelEdgeInsets;
-        self.imageEdgeInsets = imageEdgeInsets;
+        labelWidth = self.titleLabel.frame.size.width;
+        labelHeight = self.titleLabel.frame.size.height;
     }
+    
+    UIEdgeInsets imageEdgeInsets = UIEdgeInsetsZero;
+    UIEdgeInsets labelEdgeInsets = UIEdgeInsetsZero;
+    
+    switch (style) {
+        case UIButtonLayoutStyleTopImageBottomTitle:
+        {
+            imageEdgeInsets = UIEdgeInsetsMake(-labelHeight-space/2.0, 0, 0, -labelWidth);
+            labelEdgeInsets = UIEdgeInsetsMake(0, -imageWith, -imageHeight-space/2.0, 0);
+        }
+            break;
+        case UIButtonLayoutStyleLeftImageRightTitle:
+        {
+            imageEdgeInsets = UIEdgeInsetsMake(0, -space/2.0, 0, space/2.0);
+            labelEdgeInsets = UIEdgeInsetsMake(0, space/2.0, 0, -space/2.0);
+        }
+            break;
+        case UIButtonLayoutStyleTopTitleBottomImage:
+        {
+            imageEdgeInsets = UIEdgeInsetsMake(0, 0, -labelHeight-space/2.0, -labelWidth);
+            labelEdgeInsets = UIEdgeInsetsMake(-imageHeight-space/2.0, -imageWith, 0, 0);
+        }
+            break;
+        case UIButtonLayoutStyleLeftTitleRightImage:
+        {
+            imageEdgeInsets = UIEdgeInsetsMake(0, labelWidth+space/2.0, 0, -labelWidth-space/2.0);
+            labelEdgeInsets = UIEdgeInsetsMake(0, -imageWith-space/2.0, 0, imageWith+space/2.0);
+        }
+            break;
+        default:
+            break;
+    }
+    self.titleEdgeInsets = labelEdgeInsets;
+    self.imageEdgeInsets = imageEdgeInsets;
 }
 
 @end
